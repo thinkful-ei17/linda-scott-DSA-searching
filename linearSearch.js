@@ -1,4 +1,5 @@
 'use strict';
+/* global $ */
 /*
 Given the following dataset, find out how many tries did it take to search for a particular item in the dataset. If the item is not in the dataset, provide a message and indicate how many searches did it take to do so.
 
@@ -61,12 +62,20 @@ function binarySearch(arr, value, start=0, end=arr.length-1) {
 
 // console.log(binarySearch(arr, value));
 
-$(){
+$(function(){
 
-  $('#linear').submit(function(e){
-    e.preventDefault();
+  $('#linear').click(function(e){   
+    console.log('linear was pressed');
     const value = $('input').val();
-    
-    $('.results').html('linearSearch(arr, value)');
-  });
-}
+    linearSearch(arr, value);
+    $('.results').html('linear search ran');
+  });  
+
+  $('#binary').click(function (e) {
+    console.log('binary was pressed');
+    const value = $('input').val();
+    binarySearch(arr, value);
+    $('.results').html('binary search ran');
+  }); 
+
+});
