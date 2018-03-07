@@ -1,5 +1,4 @@
 import React from 'react';
-import {linearSearch, binarySearch} from '../helperFunctions';
 
 export default class Form extends React.Component{
   constructor(props){
