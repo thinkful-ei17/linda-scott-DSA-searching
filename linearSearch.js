@@ -62,20 +62,20 @@ function binarySearch(arr, value, start=0, end=arr.length-1) {
 
 // console.log(binarySearch(arr, value));
 
-$(function(){
+// $(function(){
 
-  $('#linear').click(function(e){   
-    console.log('linear was pressed');
-    const value = $('input').val();
-    linearSearch(arr, value);
-    $('.results').html('linear search ran');
-  });  
+//   $('#linear').click(function(e){   
+//     console.log('linear was pressed');
+//     const value = $('input').val();
+//     linearSearch(arr, value);
+//     $('.results').html('linear search ran');
+//   });  
 
-  $('#binary').click(function (e) {
-    console.log('binary was pressed');
-    const value = $('input').val();
-    binarySearch(arr, value);
-    $('.results').html('binary search ran');
-  }); 
+//   $('#binary').click(function (e) {
+//     console.log('binary was pressed');
+//     const value = $('input').val();
+//     binarySearch(arr, value);
+//     $('.results').html('binary search ran');
+//   }); 
 
-});
+// });
